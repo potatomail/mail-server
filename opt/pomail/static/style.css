@@ -1,0 +1,68 @@
+:root {
+  --main-color: rgb(0,70,42);
+}
+textarea {
+    min-height: 400px;
+}
+.mail_design{
+  display: flex;
+  flex-direction: row;
+  width: 60%;
+  justify-content: space-between;
+  border-style: solid;
+  border-width: 3px;
+  margin-top: -3px;
+  cursor: pointer;
+}
+.upper > p {
+  margin-bottom: 0px;
+}
+
+.account-container {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  max-width: 400px;
+  transform: translateY(calc(50vh - 50%));
+}
+
+.account-container .account-title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 20px auto 40px;
+  font-size: 32px;
+}
+.account-container .form-group {
+  border-bottom: 2px solid var(--main-color);
+}
+
+.account-container .form-control {
+  border:none;
+}
+
+.account-container .form-control::placeholder {
+  color: var(--main-color);
+}
+
+.account-title img {
+  width: 40px;
+  margin-right: 10px;
+}
+
+.account-container .right {
+  margin: 10px 0 10px auto;
+  color: var(--main-color);
+  float:right;
+}
+
+.account-container .create-account {
+  margin: 20px auto;
+  color: var(--main-color);
+}
+
+
+.account-container .btn-primary {
+  width: 100%;
+  background-color:var(--main-color);
+}

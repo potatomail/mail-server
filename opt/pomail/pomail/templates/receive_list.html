@@ -1,0 +1,157 @@
+{% extends 'mail_template.html' %}
+{% load static %}
+{% block content %}
+<style>
+.received-mail-top {
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    padding: 8px;
+    border-bottom: 1px solid rgba(0,0,0, 0.3);
+}
+.received-mail-top input{
+    flex: 0 1 300px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%);
+}
+.received-mail-top input:focus{
+    border-color: #66afe9;
+    outline: 0;
+}
+.received-mail-body {
+    height: calc(100vh - 90px - 48px)
+}
+.received-mail-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+}
+.received-mail-body {
+    width: 100%;
+}
+
+.mail {
+    display: flex;
+    flex-direction: row;
+    height: 56px;
+    border-bottom: 1px solid rgba(0,0,0, 0.3);
+    color: black;
+    cursor: pointer;
+}
+.mail.opened {
+    color: rgba(50, 168, 82);
+}
+
+.mail div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.mail .checkbox-div{
+    flex: 0 0 32px;
+    justify-content: center;
+}
+
+.mail .opened-div{
+    flex: 0 0 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.mail .attatched-div{
+    flex: 0 0 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+.mail .mail-sender{
+    flex: 0 0 100px;
+}
+.mail .mail-subject{
+    flex: 1 1 100px;
+}
+.mail .mail-date{
+    flex: 0 0 100px;
+    color: rgba(0,0,0, 0.3);
+}
+.received-mail-bottom .mail-bottom-div {
+    border-radius: 4px;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0,0,0, 0.2);
+    color: black;
+    font-size: 10px;
+    margin: 4px;
+    cursor: pointer;
+}
+.received-mail-bottom .mail-bottom-div.cur-page {
+    background-color: var(--main-color);
+    color: white;
+}
+</style>
+
+<div class="received-mail-top">
+    <input placeholder="메일 검색">
+    <button>삭제</button>
+</div>
+
+<div class="received-mail-body">
+    {% for mail in mail_list %}
+    <div data-id="{{mail.id}}" class="{% if mail.opened is True %}opened{% endif %} mail">
+        <div class="checkbox-div"><input type="checkbox"></div>
+        <div class="opened-div"><img></div>
+        <div class="attatched-div">
+            {% if mail.attatched %}
+            <img >
+            {% endif %}
+        </div>
+        <div class="mail-sender">
+            {{mail.sender}}
+        </div>
+        <div class="mail-subject">
+            {{mail.subject}}
+        </div>
+        <div class="mail-date">
+            {{mail.date}}
+
+        </div>
+    </div>
+    {% endfor %}
+</div>
+
+<div class="received-mail-bottom">
+    <div class="mail-bottom-div">&lt;</div>
+    {% with ''|center:tot_page as range %}
+    {% for _ in range %}
+        <div class="mail-bottom-div {% if forloop.counter == cur_page %} cur-page {% endif %}">{{ forloop.counter }}</div>
+        
+    {% endfor %}
+    {% endwith %}
+    <div class="mail-bottom-div">&gt;</div>
+</div>
+{% endblock content %}
+
+{% block inner_js %}
+<script>
+    var mail_body = document.querySelector(".received-mail-body");
+    mail_body.onclick = (evt) => {
+        var target = evt.target;
+        console.log(target);
+        while(target != mail_body && target) {
+            console.log(target);
+            if (target.classList.contains("mail")) {
+                window.location.href = '/read_mail/' + target.dataset.id;
+                break;
+            }
+            target = target.parentNode;
+        }
+    };
+</script>
+{% endblock inner_js %}

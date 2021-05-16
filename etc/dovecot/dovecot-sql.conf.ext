@@ -1,0 +1,4 @@
+driver = mysql
+connect = "host=pomail.cylslqlklnx0.ap-northeast-2.rds.amazonaws.com dbname=postfix_accounts user=root password=rootoor123"
+default_pass_scheme = md5
+password_query = SELECT Email as User, password FROM accounts_table WHERE Email='%u';

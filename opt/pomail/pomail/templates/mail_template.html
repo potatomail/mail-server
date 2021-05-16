@@ -1,0 +1,150 @@
+{% extends 'base_template.html' %}
+{% load static %}
+{% block title %}
+Pomail
+{% endblock title %}
+
+{% block custom_css %}
+<style>
+    :root {
+        --main-color: rgb(0,70,42);
+        --text-color: rgb(23,87,62);
+    }
+    .header {
+        width: 100vw;
+        height: 48px;
+        background-color: var(--main-color);
+        color: white;
+        font-size: 32px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .header img{
+        width: 40px;
+        margin: 0 10px;
+    }
+
+    .header .welcome {
+        font-size: 16px;
+        flex-grow: 1;
+        text-align: right;
+        margin: 0 20px;
+    }
+    .header .welcome button.logout {
+        height: 32px;
+        color: black;
+        margin: 0 10px;
+        font-size: 16px;
+    }
+    .main-container {
+        display: flex;
+        flex-direction: row;
+        height: calc(100vh - 48px);
+    }
+    .left-nav {
+        display: flex;
+        flex-direction: column;
+        flex: 0 0 200px;
+        border-right: 1px solid rgba(0,0,0, 0.3);
+    }
+    .left-nav .write-mail-div {
+        width: 100%;
+        height: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-bottom: 1px solid rgba(0,0,0, 0.3);
+    }
+    .left-nav .write-mail-div .write-mail-btn {
+        width: fit-content;
+        height: 32px;
+        font-size: 16px;
+        background-color: var(--main-color);
+        color: white;
+        border: none;
+        border-radius: 4px;
+    }
+
+    .mailbox-container {
+        display: block;
+        flex: 1 1 0;
+    }
+    .mailbox {
+        width: 100%;
+        height: 60px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        color :gray;
+        padding: 16px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+
+    .mailbox.selected {
+        color : var(--text-color);
+        font-weight: bold;
+    }
+
+    .mailbox img {
+        width: 32px;
+        margin-right: 10px;
+    }
+    .content {
+        flex: 1 1 0;
+        height: calc(100vh - 48px);
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+</style>
+{% endblock custom_css %}
+
+{% block bodydata %}
+    <div class="main">
+        <div class="header">
+            <img src="{% static 'potato.png'%}">
+            Pomail
+            
+            <div class="welcome">
+                <button class="logout" onclick="location.href='/logout'">Logout</button>
+                Welcome! {{  user.get_username }}
+            </div>
+        </div>
+        <div class="main-container">
+            <div class="left-nav">
+                <div class="write-mail-div">
+                    <button class="write-mail-btn">메일 쓰기</button>
+                </div>
+                <div class="mailbox-container">
+                    <div class="mailbox received-mail {% if cur_mailbox == 'received-mail' %} selected {% endif %}"><img src="{% static 'potato.png'%}">받은메일함</div>
+                    <div class="mailbox sent-mail {% if cur_mailbox == 'sent-mail' %} selected {% endif %}"><img src="{% static 'potato.png'%}">보낸메일함</div>
+                </div>
+            </div>
+            <div class="content">
+                {% block content %}{% endblock content %}
+            </div>
+        </div>
+    
+    
+
+    </div>
+{% endblock bodydata %}
+
+{% block custom_js %}
+<script>
+    var receivedMail = document.querySelector(".mailbox.received-mail");
+    var sendMail = document.querySelector(".mailbox.sent-mail");
+    var writeMail = document.querySelector(".write-mail-div");
+    receivedMail.onclick = (e) => {
+        window.location.href = '/receive_list/';
+    };
+    sendMail.onclick = (e) => {
+        window.location.href = '/send_list/';
+    };
+    writeMail.onclick = (e) => {
+        window.location.href = '/send/';
+    };
+</script>
+{% block inner_js %}{% endblock inner_js %}
+{% endblock custom_js %}
