@@ -1,0 +1,40 @@
+Return-Path: <test1@pomail.co.kr>
+Delivered-To: test1@pomail.co.kr
+Received: from mail.pomail.co.kr
+	by localhost with LMTP
+	id QVk2EJO+lWAe7hMA0J78UA
+	(envelope-from <test1@pomail.co.kr>)
+	for <test1@pomail.co.kr>; Fri, 07 May 2021 18:26:27 -0400
+Received: from DESKTOPH794SVU (unknown [220.73.19.80])
+	by mail.pomail.co.kr (Postfix) with ESMTPA id 230F331BAFC3
+	for <test1@pomail.co.kr>; Fri,  7 May 2021 18:26:26 -0400 (EDT)
+From: "Microsoft Outlook" <test1@pomail.co.kr>
+Sender: "Microsoft Outlook" <test1@pomail.co.kr>
+To: <test1@pomail.co.kr>
+Subject: =?utf-8?B?TWljcm9zb2Z0IE91dGxvb2sg7YWM7Iqk7Yq4IOuplOyLnOyngA==?=
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+	boundary="----=_NextPart_000_0000_01D743DB.76282440"
+
+This is a multipart message in MIME format.
+
+------=_NextPart_000_0000_01D743DB.76282440
+Content-Type: text/plain;
+	charset="utf-8"
+Content-Transfer-Encoding: base64
+
+6rOE7KCVIOyEpOygleydhCDthYzsiqTtirjtlZjripQg64+Z7JWIIE1pY3Jvc29mdCBPdXRsb29r
+7JeQ7IScIOyekOuPmeycvOuhnCDrs7Trgrgg7KCE7J6QIOuplOydvCDrqZTsi5zsp4DsnoXri4jr
+i6QuDQo=
+
+------=_NextPart_000_0000_01D743DB.76282440
+Content-Type: text/html;
+	charset="utf-8"
+Content-Transfer-Encoding: base64
+
+PGh0bWw+PGJvZHk+PHA+6rOE7KCVIOyEpOygleydhCDthYzsiqTtirjtlZjripQg64+Z7JWIIE1p
+Y3Jvc29mdCBPdXRsb29r7JeQ7IScIOyekOuPmeycvOuhnCDrs7Trgrgg7KCE7J6QIOuplOydvCDr
+qZTsi5zsp4DsnoXri4jri6QuDQo8L3A+PC9ib2R5PjwvaHRtbD4=
+
+------=_NextPart_000_0000_01D743DB.76282440--
+

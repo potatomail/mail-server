@@ -1,0 +1,60 @@
+Return-Path: <zxx033@naver.com>
+Delivered-To: test1@pomail.co.kr
+Received: from mail.pomail.co.kr
+	by localhost with LMTP
+	id YYCCBWMleGB3kAgA0J78UA
+	(envelope-from <zxx033@naver.com>)
+	for <test1@pomail.co.kr>; Thu, 15 Apr 2021 07:37:07 -0400
+Received: from cvsmtppost027.nm.naver.com (cvsmtppost027.nm.naver.com [125.209.224.214])
+	by mail.pomail.co.kr (Postfix) with ESMTPS id F2B5131BC359
+	for <test1@pomail.co.kr>; Thu, 15 Apr 2021 07:37:06 -0400 (EDT)
+X-Naver-CIP: 223.62.21.143
+X-Originating-IP: 223.62.21.143
+Received: from cvsendbo28.nm ([10.112.235.162])
+  by cvsmtppost027.nm.naver.com with ESMTP id azjd1DR4R1aiTVvi2TcvWA
+  for <test1@pomail.co.kr>;
+  Thu, 15 Apr 2021 11:37:06 -0000
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple; d=naver.com; s=s20171208;
+	t=1618486626; bh=bDBnPzgC5VLclpBqLJza95k7qL534KiUHxYzrjlvtuU=;
+	h=Message-ID:Date:From:To:Subject;
+	b=rCjU9Wu6IrYovJ5UxFAx3q91VNXYtffymZzdvfnXuwIIU67Nkh2E3uxS05Z7+MhEE
+	 VRap45VyZUwdrQ48q3Z/vyXUxchCWGaYQ3apimtnUVPCtFnbDFd15Wt1HH21kjg3Jo
+	 DiZCGb1kVy8ma4ckLBUIL+nvvh2fAFA4qVl6d0Z80FkcUS4dnmWHxiPxbdcxNtxry/
+	 R9hGSYOfOPj+V46F1wkdd7V/Z0LFjA6lzJArh867u7PSuVQzahzn7uXlvzCz5lF12R
+	 OaEyQj2gnZCIpH0nOkJttg+j9Td40xD4qsIhyeoEL6okOyJFMgfB0liUaodhTmaj0t
+	 GCyIpF7nNn/MA==
+X-Session-ID: GQbdKAuZKAUTKxgZBqEwDNC-KAKq7qvmFot-FoMwKxurK2
+MIME-Version: 1.0
+Message-ID: <a75c2ca9c8187418c0602df52ec76b8b@cweb006.nm.nfra.io>
+Date: Thu, 15 Apr 2021 20:37:06 +0900
+From: =?utf-8?B?7KeA7IiY7Jew?= <zxx033@naver.com>
+Importance: normal
+To: <test1@pomail.co.kr>
+Subject: =?utf-8?B?aGVsbG8=?=
+X-Originating-IP: 223.62.21.143
+Content-Type: multipart/alternative;
+	boundary="-----Boundary-WM=_7f4360bfd700.1618486626402"
+
+-------Boundary-WM=_7f4360bfd700.1618486626402
+Content-Type: text/plain;
+	charset="utf-8"
+Content-Transfer-Encoding: base64
+
+aGVsbG8K
+
+-------Boundary-WM=_7f4360bfd700.1618486626402
+Content-Type: text/html;
+	charset="utf-8"
+Content-Transfer-Encoding: base64
+
+PGh0bWw+PGhlYWQ+PHN0eWxlPnB7bWFyZ2luLXRvcDowcHg7bWFyZ2luLWJvdHRvbTowcHg7fTwv
+c3R5bGU+PC9oZWFkPjxib2R5PjxkaXYgc3R5bGU9ImZvbnQtc2l6ZToxMHB0OyBmb250LWZhbWls
+eTpHdWxpbSwgc2Fucy1zZXJpZjsiPjxwPmhlbGxvPC9wPjwvZGl2PjwvYm9keT48L2h0bWw+PHRh
+YmxlIHN0eWxlPSdkaXNwbGF5Om5vbmUnPjx0cj48dGQ+PGltZyBzcmM9Imh0dHBzOi8vbWFpbC5u
+YXZlci5jb20vcmVhZFJlY2VpcHQvbm90aWZ5Lz9pbWc9Z3FicUtxSSUyRkRIY1pNcUVYTXhtc01y
+dWxNcTJ3YUFiZEt4Q29LQU1tSzQzNEZ4aTBNcWJyTW9DU3R6RlhwNlVtS0FNNVc0ZDVXNHBaTUxs
+R1dxJTJGcyUyQnprcSUyQkFKZ2J6ZVJNNjBuNzRGVDc0UlouZ2lmIiBib3JkZXI9IjAiLz48L3Rk
+PjwvdHI+PC90YWJsZT4=
+
+-------Boundary-WM=_7f4360bfd700.1618486626402--
+

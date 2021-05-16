@@ -1,0 +1,80 @@
+Return-Path: <jiddoly@naver.com>
+Delivered-To: test1@pomail.co.kr
+Received: from mail.pomail.co.kr
+	by localhost with LMTP
+	id JBJiGrxujWC76xAA0J78UA
+	(envelope-from <jiddoly@naver.com>)
+	for <test1@pomail.co.kr>; Sat, 01 May 2021 11:07:40 -0400
+Received: from cvsmtppost002.nm.naver.com (cvsmtppost002.nm.naver.com [125.209.239.201])
+	by mail.pomail.co.kr (Postfix) with ESMTPS id 5D96331C9FE9
+	for <test1@pomail.co.kr>; Sat,  1 May 2021 11:07:40 -0400 (EDT)
+Received: from cvsmtppost029.nm.naver.com ([10.112.234.114])
+  by cvsmtppost002.nm.naver.com with ESMTP id 9IIiZhEdTsO0pKNVIO5kMg
+  for <test1@pomail.co.kr>;
+  Sat, 01 May 2021 14:36:14 -0000
+Received: from cvsmtppost028.nm.naver.com ([10.112.235.113])
+  by cvsmtppost029.nm.naver.com with ESMTP id 66h7ARRHQK+Q9koi9ya1kg
+  for <test1@pomail.co.kr>;
+  Sat, 01 May 2021 14:35:11 -0000
+Received: from cvsmtppost027.nm.naver.com ([10.112.234.113])
+  by cvsmtppost028.nm.naver.com with ESMTP id oDLfWhgBTQigSqXi-9xzYA
+  for <test1@pomail.co.kr>;
+  Sat, 01 May 2021 14:34:10 -0000
+Received: from cvsmtppost026.nm.naver.com ([10.112.235.112])
+  by cvsmtppost027.nm.naver.com with ESMTP id CXRmmiV2Rl+4CrTxS3iPPg
+  for <test1@pomail.co.kr>;
+  Sat, 01 May 2021 14:33:08 -0000
+Received: from cvsmtppost021.nm.naver.com ([10.112.234.110])
+  by cvsmtppost026.nm.naver.com with ESMTP id BS+8esDdQCOgwz7PSP2oow
+  for <test1@pomail.co.kr>;
+  Sat, 01 May 2021 14:32:08 -0000
+X-Naver-CIP: 124.50.4.138
+X-Originating-IP: 124.50.4.138
+Received: from cvsendbo17.nm ([10.112.234.161])
+  by cvsmtppost021.nm.naver.com with ESMTP id WzmgqQB2SeeAMC0Ig5kN+Q
+  for <test1@pomail.co.kr>;
+  Sat, 01 May 2021 14:32:06 -0000
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple; d=naver.com; s=s20171208;
+	t=1619879526; bh=ugOA0r2DoCi36uWfdqY1on+P1sVbAPDGm61+1naVaZk=;
+	h=Message-ID:Date:From:To:Subject;
+	b=Cdyc/qp7ozRhvc8iI6zvh07HbrnwrsnSA9fAgaswyeQAwKbwD12lcEb9gAWk0csDz
+	 DHwxURE9n5MXbMTlFeqRqmPVIit9JbC7kYoGfPniStuVIaH/6s5+CQCUAo5QrIe9qY
+	 Wlt5w44dqg3EA04pR05Rwju389EZhydMrtUdUdSCrJMf0T7cg4YGATjyKXqYenNhfN
+	 OR4zRt0W14isHX2ci+Nfcs5ITOsOIfvGaE6cf9jSYsqeMAA7ua/vhxqW42iIaAaHJE
+	 o6iKtz922+/+qkkJ75l0Q8XgoPrIdFvJWw58FLgmiZjZayCF6c4HCuJTaeNUpJ7yTG
+	 H6dg9WEmjNx7Q==
+X-Session-ID: 8ln9KAuZKAUwFxMwBqum7rGGpz3TWHvTFoUZaAblFxg9KAbX
+MIME-Version: 1.0
+Message-ID: <1d99a9652f8f6d2533fd2b3de6ab563@cweb015.nm.nfra.io>
+Date: Sat, 01 May 2021 23:32:06 +0900
+From: =?utf-8?B?7J207KeA7JuQ?= <jiddoly@naver.com>
+Importance: normal
+To: <test1@pomail.co.kr>
+Subject: =?utf-8?B?dGVzdOyeheuLiOuLpH4=?=
+X-Originating-IP: 124.50.4.138
+Content-Type: multipart/alternative;
+	boundary="-----Boundary-WM=_7f3723bff700.1619879526254"
+
+-------Boundary-WM=_7f3723bff700.1619879526254
+Content-Type: text/plain;
+	charset="utf-8"
+Content-Transfer-Encoding: base64
+
+7JqU66W066G564G8Cg==
+
+-------Boundary-WM=_7f3723bff700.1619879526254
+Content-Type: text/html;
+	charset="utf-8"
+Content-Transfer-Encoding: base64
+
+PGh0bWw+PGhlYWQ+PHN0eWxlPnB7bWFyZ2luLXRvcDowcHg7bWFyZ2luLWJvdHRvbTowcHg7fTwv
+c3R5bGU+PC9oZWFkPjxib2R5PjxkaXYgc3R5bGU9ImZvbnQtc2l6ZToxMHB0OyBmb250LWZhbWls
+eTpHdWxpbSwgc2Fucy1zZXJpZjsiPjxwPuyalOultOuhueuBvDwvcD48L2Rpdj48L2JvZHk+PC9o
+dG1sPjx0YWJsZSBzdHlsZT0nZGlzcGxheTpub25lJz48dHI+PHRkPjxpbWcgc3JjPSJodHRwczov
+L21haWwubmF2ZXIuY29tL3JlYWRSZWNlaXB0L25vdGlmeS8/aW1nPXJYRm5XcjN2MTZjbGE2dHdo
+QVJsTXh2ckZ4aTRhek1ycEFVOUtxRjRwQWlTS3IzMEY0SlNGeE1xdHpGWHA2VW1LeEU1VzRkNVc0
+cFpNTGxHV3ElMkZzJTJCemtxJTJCQUpnYnplUk02MG43NEZUNzRSWi5naWYiIGJvcmRlcj0iMCIv
+PjwvdGQ+PC90cj48L3RhYmxlPg==
+
+-------Boundary-WM=_7f3723bff700.1619879526254--
+
