@@ -1,5 +1,0 @@
-user = root
-password = rootoor123
-hosts = pomail.cylslqlklnx0.ap-northeast-2.rds.amazonaws.com
-dbname = postfix_accounts
-query = SELECT 1 FROM accounts_table WHERE Email='%s'

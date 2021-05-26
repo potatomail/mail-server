@@ -1,1 +1,0 @@
-cdb	/usr/lib64/postfix/postfix-cdb.so	dict_cdb_open	mkmap_cdb_open

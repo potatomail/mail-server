@@ -1,3 +1,0 @@
-$shlib_directory/postfix-mysql.so:f:root:-:755
-$manpage_directory/man5/mysql_table.5.gz:f:root:-:644
-$readme_directory/MYSQL_README:f:root:-:644

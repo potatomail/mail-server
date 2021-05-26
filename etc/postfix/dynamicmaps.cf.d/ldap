@@ -1,1 +1,0 @@
-ldap	/usr/lib64/postfix/postfix-ldap.so	dict_ldap_open
