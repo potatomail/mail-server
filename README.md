@@ -46,5 +46,6 @@ with existing mail.
 5. After that, you can check the original file by decrypting it by entering the secondary password when viewing the sensitive attachment.
 
 ## Prototype
-<iframe width="560" height="315" src="https://www.youtube.com/embed/GmYDR-eOB4E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+[![Video Label](http://img.youtube.com/vi/GmYDR-eOB4E/0.jpg)](https://youtu.be/GmYDR-eOB4E?t=0s)
+- Click the image
 
