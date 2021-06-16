@@ -20,6 +20,8 @@ with existing mail.
 
 ## Mail server
 ![image](https://user-images.githubusercontent.com/58061467/122188254-bf1d0d80-ceca-11eb-9999-663816c48b71.png)
+![image](https://user-images.githubusercontent.com/52912896/122201479-09a48700-ced7-11eb-9d8b-c0ab45a106f7.png)
+
 - Linux CentOS
 - Postfix, Dovecot
 - protocol : SMTP, IMAP
@@ -38,6 +40,7 @@ with existing mail.
 - Flask
 
 ## Process
+![image](https://user-images.githubusercontent.com/52912896/122201725-4d978c00-ced7-11eb-9c16-324f33b5d978.png)
 ![image](https://user-images.githubusercontent.com/58061467/122189747-28515080-cecc-11eb-9837-fa1c2f1537cd.png)
 1. Use Watchdog to detect real-time email reception
 2. Parses the received eml file when mail is received.
