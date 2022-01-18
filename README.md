@@ -1,10 +1,8 @@
-# POMAIL
+## Ewha Woman's University cyber security capstone project (20.09 ~ 21.06)
+## POMAIL
 - Sensitive information detection and automatic encryption services in e-mail using AI
 
 ## Overview
-- Ewha Woman's University cyber security capstone project
-- 20.09 ~ 21.06
-
 Most people are probably using email services. However, hacking attempts at each portal site like Naver, Google are frequent, and there are quite a few cases of actual leaks. 
 We focused on the email service on the portal site. Due to the leakage of personal information, we have become aware of the possibility of leakage of email information such as persual or deletion of personal emails without permission.
 
